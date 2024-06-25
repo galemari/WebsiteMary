@@ -7,7 +7,7 @@ import { removeUser } from "../controllers/registro.controller.js";
 //CRUD
 
 // Create
-router.post('/',crearUsuario);
+router.post('/',crearUsuario.register);
 
 // Read
 router.get('/', getUsers );
