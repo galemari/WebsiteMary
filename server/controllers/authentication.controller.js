@@ -52,7 +52,7 @@ async function register(req,res){
     if(usuarioAResvisar){
       return res.status(400).send({status:"Error",message:"Este usuario ya existe"})
     }
-    const salt = await bcryptjs.genSalt(5);
+    const salt = await bcryptjs.genSalt(10);
     const hashPassword = await bcryptjs.hash(password,salt);
     const nuevoUsuario ={
       user, email, password: hashPassword
