@@ -27,6 +27,8 @@
       height: 100%;
       justify-content: center;
       margin: 0 auto;
+      margin-top: -10rem;
+      margin-bottom: -10rem;
       max-width: 600px;
       width: 100%;
   }
@@ -40,6 +42,14 @@
       transition: .9s;
       transform-style: preserve-3d;
       width: 100%;
+  }
+
+  /*Titulo*/
+  .titleContainer{
+    margin-top: 10rem;
+   display: flex;
+   justify-content: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   /* Front - Calendar */
